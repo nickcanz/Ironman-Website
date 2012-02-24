@@ -1,0 +1,7 @@
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\bin\Website.dll
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\bin\Website.pdb
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\bin\EntityFramework.dll
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\bin\EntityFramework.xml
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\obj\Debug\Website.dll
+C:\Users\IBM_ADMIN\Desktop\ironman\Website\Website\obj\Debug\Website.pdb
