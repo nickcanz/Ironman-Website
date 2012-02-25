@@ -5,12 +5,16 @@ margin-top: 1em;
 .motto {
 text-align: center;
 border-bottom: 5px solid #730118;
-margin-bottom: 20px;
+margin-bottom: 2em;
 color: #000;
 }
 
-h1,h2,h3 {
+h1,h3 {
 color: #08C;
+}
+
+h2 {
+color: #730118;
 }
 
 .caption h2 {
@@ -19,4 +23,18 @@ text-align: center;
 
 .emph {
 text-transform: uppercase;
+}
+
+.ralign {
+text-align: right !important;
+}
+
+.push-bottom {
+margin-bottom: 2em;
+}
+
+.thumbnail > a > img {
+margin-left: auto;
+margin-right: auto;
+display: block;
 }
