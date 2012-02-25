@@ -2,32 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title</title>
-
+    <title>Ironman Welding LLC | @ViewBag.Title</title>
     <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" type="text/css" />
-
     <script src="@Url.Content("~/Content/js/jquery-1.7.1.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Content/js/bootstrap.js")" type="text/javascript"></script>
 </head>
-
 <body>
     <div class='container'>
         @Html.Partial("Header")
         <div class='row'>
-            <div class='span-2'>
-                <ul>
-                    <li>@Html.ActionLink("Home & About Us", "Index", "Home")</li>
-                    <li>A Little About Me</li>
-                    <li>Hourly Rates</li>
-                    <li>Product List</li>
-                    <li>Completed Projects</li>
-                    <li>Photo Gallery</li>
-                    <li>Links</li>
-                </ul>
+            <div class='span2'>
+                <div class='sidebar-nav'>
+                    @{
+                        var controller = ViewContext.Controller.ValueProvider.GetValue("controller").RawValue;
+                    }
+                    <ul class='nav nav-pills nav-stacked'>
+                        <li class='@(controller == "Home" ? "active" : String.Empty)'>@Html.ActionLink("Home & About Us", "Index", "Home")</li>
+                        <li class='@(controller == "About" ? "active" : String.Empty)'>@Html.ActionLink("A Little About Me", "Index", "About")</li>
+                        <li class='@(controller == "Rates" ? "active" : String.Empty)'>@Html.ActionLink("Hourly Rates", "Index", "Rates")</li>
+                        <li class='@(controller == "Products" ? "active" : String.Empty)'>@Html.ActionLink("Product List", "Index", "Products")</li>
+                        <li class='@(controller == "Projects" ? "active" : String.Empty)'>@Html.ActionLink("Completed Projects", "Index", "Projects")</li>
+                        <li class='@(controller == "Photos" ? "active" : String.Empty)'>@Html.ActionLink("Photo Gallery", "Index", "Photos")</li>
+                        <li class='@(controller == "Links" ? "active" : String.Empty)'>@Html.ActionLink("Links", "Index", "Links")</li>
+                    </ul>
+                </div>
             </div>
-            <div class='span-10'>
+            <div class='span10'>
                 @RenderBody()
             </div>
         </div>

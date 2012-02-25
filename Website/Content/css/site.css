@@ -1,1 +1,22 @@
-﻿/* File Created: February 23, 2012 */
+﻿header {
+margin-top: 1em;
+}
+
+.motto {
+text-align: center;
+border-bottom: 5px solid #730118;
+margin-bottom: 20px;
+color: #000;
+}
+
+h1,h2,h3 {
+color: #08C;
+}
+
+.caption h2 {
+text-align: center;
+}
+
+.emph {
+text-transform: uppercase;
+}
