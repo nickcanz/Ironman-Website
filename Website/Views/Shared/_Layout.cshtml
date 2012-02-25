@@ -16,7 +16,7 @@
             <div class='span2'>
                 <div class='sidebar-nav'>
                     @{
-                        var controller = ViewContext.Controller.ValueProvider.GetValue("controller").RawValue;
+                        var controller = (string)ViewContext.Controller.ValueProvider.GetValue("controller").RawValue;
                     }
                     <ul class='nav nav-pills nav-stacked'>
                         <li class='@(controller == "Home" ? "active" : String.Empty)'>@Html.ActionLink("Home & About Us", "Index", "Home")</li>
