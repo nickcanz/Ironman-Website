@@ -1,0 +1,26 @@
+﻿@model Website.Models.Business
+
+
+<div class='span5'>
+    <div class='row'>
+        <div class='span3'>
+            <address>
+                @Model.Name <br />
+                @(Model.Address.Select(s => s + "<br/>"))
+                @if (!String.IsNullOrEmpty(Model.Website)) {
+                <a href="@Model.Website">@Model.Website</a><br />
+                }
+            </address>
+        </div>
+        <div class="span2">
+            <address>
+            @if (!String.IsNullOrEmpty(Model.Phone)) {
+                @("Office:" + Model.Phone + "<br/>")
+            }
+            @if (!String.IsNullOrEmpty(Model.Fax)) {
+                @("Fax:" + Model.Fax + "<br/>")
+            }
+            </address>
+        </div>
+    </div>
+</div>

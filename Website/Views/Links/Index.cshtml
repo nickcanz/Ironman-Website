@@ -1,12 +1,16 @@
-﻿@{
-    ViewBag.Title = "Links";
+﻿@model IEnumerable<Website.Models.Business>
+
+@{
+    ViewBag.Title = "Index";
 }
 
-<h1>Companies I Like to Deal With</h1>
+<h2>Index</h2>
 
-<div class='row'>
-    <div class='span5'></div>
+<ul>
+    @foreach (var business in Model) {
+        <li>
+        @Html.Partial("Business", business)
+        </li>
+    }
 
-    <div class='span5'></div>
-
-</div>
+</ul>

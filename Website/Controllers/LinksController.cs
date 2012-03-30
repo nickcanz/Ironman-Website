@@ -86,9 +86,34 @@ namespace Website.Views.Photos {
             Very pleasant to deal with . They do there best to get your parts fast. 
             Multiple stores, closest to Stamford is Norwalk!"
         },
+        new Business {
+          Name = "Miller Electric Manufacturing Co.",
+          Address = new List<string> {
+            "1635 W. Spencer St",
+            "P.O. Box 1079",
+            "Appleton, WI 54912-1079",
+          },
+          Phone = "(920) 734-9821",
+          Website = "http://www.millerwelds.com",
+          Testimonial = @"
+            First rate welding equipment! Pick it out online and buy it from 
+            Shaw Welding Supply in Carmel NY. The power of Blue!"
+        },
+        new Business {
+          Name = "MP Tool Sales",
+          Address = new List<string> {
+            "70 Fort Point St",
+            "Norwalk, CT 06855-1294",
+          },
+          Phone = "(203) 866-9776",
+          Fax = "(203) 866-0047",
+          Testimonial = @"
+            The best Makita prices in Connecticut! They have a bunch of other tools 
+            as well, like OTC, S-K, some Proto."
+        },
       };
 
-      return View();
+      return View(businesses);
     }
   }
 }
